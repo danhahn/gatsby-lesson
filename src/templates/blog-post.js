@@ -11,11 +11,23 @@ export default ({ data }) => {
 };
 
 export const query = graphql`
-  query BlogPostQuery($slug: String!) {
-    markdownRemark(fields: { slug: { eq: $slug } }) {
+  query BlogPostQuery($slug: String! $root: String!) {
+    markdownRemark(fields: {slug: { eq : $slug}}) {
       html
       frontmatter {
         title
+      }
+    }
+    allMarkdownRemark(filter: { fields : { root : {eq : $root} } }) {
+      edges {
+        node {
+          frontmatter {
+            title
+          }
+          fields {
+            slug
+          }
+        }
       }
     }
   }

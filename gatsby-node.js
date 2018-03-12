@@ -5,10 +5,16 @@ exports.onCreateNode = ({ node, getNode, boundActionCreators }) => {
   const { createNodeField } = boundActionCreators
   if (node.internal.type === `MarkdownRemark`) {
     const slug = createFilePath({ node, getNode, basePath: `pages` })
+    const [root] = /(\/\w*\/\w*\d*\/)/g.exec(slug);
     createNodeField({
       node,
       name: `slug`,
       value: slug,
+    })
+    createNodeField({
+      node,
+      name: `root`,
+      value: root,
     })
   }
 };
@@ -23,6 +29,7 @@ exports.createPages = ({ graphql, boundActionCreators }) => {
             node {
               fields {
                 slug
+                root
               }
             }
           }
@@ -37,6 +44,7 @@ exports.createPages = ({ graphql, boundActionCreators }) => {
           context: {
             // Data passed to context is available in page queries as GraphQL variables.
             slug: node.fields.slug,
+            root: node.fields.root,
           },
         });
       })
