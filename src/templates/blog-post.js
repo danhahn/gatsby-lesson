@@ -1,18 +1,22 @@
 import React from "react";
 import Link from "gatsby-link";
 import SideNav from '../components/SideNav';
-import { cleanNav } from '../utils/cleanData';
+import TagList from '../components/TagList';
+import { cleanNav, cleanTags } from '../utils/cleanData';
 
 export default ({ data }) => {
   const post = data.markdownRemark;
-  const { edges: nav } = data.allMarkdownRemark;
-  const navData = cleanNav(nav);
+  const navItems = cleanNav(data);
+  const tags = cleanTags(data);
   return (
     <div>
       <h1>{post.frontmatter.title}</h1>
       <div dangerouslySetInnerHTML={{ __html: post.html }} />
       <SideNav
-        navData={navData}
+        navItems={navItems}
+      />
+      <TagList
+        tags={tags}
       />
     </div>
   );

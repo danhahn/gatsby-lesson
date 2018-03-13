@@ -1,5 +1,6 @@
 const cleanNav = data => {
-  return data.map(({ node }) => {
+  const { edges: nav } = data.allMarkdownRemark;
+  return nav.map(({ node }) => {
     return {
       id: node.id,
       slug: node.fields.slug,
@@ -9,16 +10,8 @@ const cleanNav = data => {
 };
 
 const cleanTags = data => {
-  // const {
-  //   data,
-  //   icon,
-  //   label
-  // } = markdownRemark.frontmatter.tags;
-  return {
-    data,
-    icons,
-    label,
-  }
+  const { tags } = data.markdownRemark.frontmatter;
+  return Object.values(tags);
 }
 
 export { cleanNav, cleanTags };

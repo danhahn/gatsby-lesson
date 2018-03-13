@@ -1,11 +1,11 @@
 import React from 'react';
 import Link from "gatsby-link";
 
-const SideNav = ({navData}) => {
+const SideNav = ({navItems}) => {
   return (
     <ul>
       {
-        navData.map(({id, slug, title}) => (
+        navItems.map(({id, slug, title}) => (
           <li key={id}>
             <Link to={slug}
               exact
