@@ -31,12 +31,10 @@ export const query = graphql`
         tags {
           html {
             label
-            icon
             data
           }
           css {
             label
-            icon
             data
           }
         }
