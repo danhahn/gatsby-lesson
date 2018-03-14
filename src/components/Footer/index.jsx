@@ -1,9 +1,12 @@
 import React from 'react';
+import Logo from "../Logo";
+import styles from './footer.module.scss';
 
 const Footer = () => {
   return (
-    <footer>
-      <p>Copyright © 2018 Copyright Holder All Rights Reserved.</p>
+    <footer className={styles.globalFooter}>
+      <p>Copyright © {new Date().getFullYear()} Copyright Holder All Rights Reserved.</p>
+      <Logo isSmall />
     </footer>
   );
 };
