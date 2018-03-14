@@ -5,14 +5,15 @@ const cleanNav = data => {
       id: node.id,
       slug: node.fields.slug,
       title: node.frontmatter.title,
+      lesson: node.frontmatter.lesson,
     }
   });
 };
 
 const cleanTags = data => {
   const { tags } = data.markdownRemark.frontmatter;
-  if (!tags) return null;
-  return Object.values(tags);
+  if (!tags) return;
+  return Object.values(tags).filter(tag => tag !== null);
 }
 
 export { cleanNav, cleanTags };

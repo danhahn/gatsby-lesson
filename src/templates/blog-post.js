@@ -4,18 +4,27 @@ import SideNav from '../components/SideNav';
 import TagList from '../components/TagList';
 import { cleanNav, cleanTags } from '../utils/cleanData';
 
+import styles from './blog-post.module.scss';
+
 export default ({ data }) => {
   const post = data.markdownRemark;
   const navItems = cleanNav(data);
   const tags = cleanTags(data);
   return (
-    <div>
-      <h1>{post.frontmatter.title}</h1>
-      <div dangerouslySetInnerHTML={{ __html: post.html }} />
-      <SideNav
-        navItems={navItems}
-      />
-      {tags ? <TagList tags={tags} /> : null }
+    <div className={styles.blogPost}>
+      <header className={styles.header}>
+        <h1>{post.frontmatter.title}</h1>
+      </header>
+      <article className={styles.main}>
+        <h1>{post.frontmatter.lesson}</h1>
+        <div dangerouslySetInnerHTML={{ __html: post.html }} />
+      </article>
+      <aside className={ styles.side }>
+        <SideNav
+          navItems={navItems}
+        />
+        {tags ? <TagList tags={tags} /> : null }
+      </aside>
     </div>
   );
 };
@@ -26,6 +35,7 @@ export const query = graphql`
       html
       frontmatter {
         title
+        lesson
         tags {
           html {
             label
@@ -47,6 +57,7 @@ export const query = graphql`
           id
           frontmatter {
             title
+            lesson
           }
           fields {
             slug

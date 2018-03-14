@@ -8,14 +8,14 @@ const SideNav = ({navItems}) => {
   return (
     <ul className={styles.sidenav}>
       {
-        navItems.map(({id, slug, title}) => (
+        navItems.map(({id, slug, title, lesson}) => (
           <li key={id} className={styles.sidenav__item}>
             <Link to={slug}
               exact
               className={styles.sidenav__link}
               activeClassName={[styles.sidenav__link, styles.sidenav__link__active].join(' ')}
             >
-              {title}
+              {lesson || title}
             </Link>
           </li>
         ))
