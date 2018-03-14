@@ -19,11 +19,7 @@ nav:
 
 ---
 
-<<<<<<< HEAD
 We want to build a template to once so we do not have to write it every time.
-=======
-We want to build a template to once so we do not have to write it every time.
->>>>>>> 🎮
 
 ## Saving
 
