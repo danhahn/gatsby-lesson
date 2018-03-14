@@ -4,6 +4,7 @@ import SideNav from '../components/SideNav';
 import TagList from '../components/TagList';
 import { cleanNav, cleanTags } from '../utils/cleanData';
 
+import "prismjs/themes/prism-okaidia.css";
 import styles from './blog-post.module.scss';
 
 export default ({ data }) => {
