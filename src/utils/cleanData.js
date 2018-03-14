@@ -11,6 +11,7 @@ const cleanNav = data => {
 
 const cleanTags = data => {
   const { tags } = data.markdownRemark.frontmatter;
+  if (!tags) return null;
   return Object.values(tags);
 }
 

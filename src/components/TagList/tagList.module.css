@@ -1,0 +1,32 @@
+.TagList {
+  border: 1px solid silver;
+  padding: .5em 1em;
+  background-color: #FAFAFA;
+  border-radius: .4em;
+}
+
+.TagList__item {
+  padding: .3em 0;
+}
+
+.TagList__item:not(:last-of-type) {
+  margin: .3em 0;
+  border-bottom: 1px solid silver;
+}
+
+.TagList__item:first-of-type {
+  margin-top: 0;
+}
+
+.TagList__list {
+  margin: .5em 0;
+  padding: 0;
+  list-style-type: none;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.TagList__listItem {
+  margin-right: .3em;
+  padding: .1em 0;
+}

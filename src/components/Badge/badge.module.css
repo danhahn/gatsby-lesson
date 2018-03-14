@@ -1,0 +1,52 @@
+.Badge {
+  font: 17px "Droid Sans",sans-serif;
+  display: inline;
+  padding: .2em .5em .2em;
+  font-weight: 700;
+  line-height: 1;
+  color: white;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: baseline;
+  border-radius: .25em;
+  background-color: rebeccapurple;
+  text-transform: uppercase;
+  display: inline-block;
+  align-items: baseline;
+}
+
+.Badge svg {
+  margin-right: .5em;
+}
+
+.Badge__caps {
+  text-transform: uppercase;
+}
+
+.BadgeHtml {
+  background-color: #E44D26;
+}
+
+.BadgeCss {
+  background-color: #1572B6;
+}
+
+.BadgeJs {
+  background-color: #f7df1e;
+  color: black;
+}
+
+.BadgeAttribute {
+  background-color: #008080;
+}
+
+.Badge__list {
+  display: flex;
+  margin: 0 0 .5em;
+  padding: 0;
+  list-style: none;
+}
+
+.Badge__listItem:not(:last-of-type) {
+  margin-right: .2em;
+}

@@ -15,9 +15,7 @@ export default ({ data }) => {
       <SideNav
         navItems={navItems}
       />
-      <TagList
-        tags={tags}
-      />
+      {tags ? <TagList tags={tags} /> : null }
     </div>
   );
 };
