@@ -1,6 +1,8 @@
 import React from "react";
 import Link from "gatsby-link";
+import Footer from '../components/Footer';
 
+import './main.scss';
 
 export default ({ children, data }) => (
   <div>
@@ -13,6 +15,7 @@ export default ({ children, data }) => (
       About
     </Link>
     {children()}
+    <Footer />
   </div>
 );
 

@@ -1,0 +1,23 @@
+//J:9E9E9E F:E91E63 M:8BC34A A:f1c40f
+
+$primary: #c0392b;
+$secondary: darken($primary, 15%);
+$white: #fff;
+$gray: #BDC3C7;
+$gray5: lighten($gray, 5%);
+$gray10: lighten($gray, 10%);
+$gray15: lighten($gray, 15%);
+$gray20: lighten($gray, 20%);
+$primary5: lighten($primary, 5%);
+$primary10: lighten($primary, 10%);
+$primary20: lighten($primary, 20%);
+$black: #20232a;
+$gray2: lighten($black, 10%);
+
+$nav-height: 60px;
+
+$alert: #bb5b4a;
+
+$alt: desaturate($primary, 10%);
+
+$font-size: 17px;
