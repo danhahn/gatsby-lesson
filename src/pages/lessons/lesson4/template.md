@@ -1,7 +1,7 @@
 ---
 title: Lesson 1
 lesson: Building a HTML template
-date: 1/24/2018 15:00
+date: 2018-02-27
 template: article.jade
 tags:
   html:
@@ -19,7 +19,11 @@ nav:
 
 ---
 
-We want to build a template to once so we do not have to write it every time.  
+<<<<<<< HEAD
+We want to build a template to once so we do not have to write it every time.
+=======
+We want to build a template to once so we do not have to write it every time.
+>>>>>>> 🎮
 
 ## Saving
 
@@ -48,7 +52,11 @@ To create any `html` file you need to `save as` `.html` to make the file in to a
 </body>
 </html>
 ```
-We will use this as our starting point for all `html` files that we need to create going forward.  
+<<<<<<< HEAD
+We will use this as our starting point for all `html` files that we need to create going forward.
+=======
+We will use this as our starting point for all `html` files that we need to create going forward.
+>>>>>>> 🎮
 
 ## Using the template
 
@@ -58,7 +66,11 @@ Now what we have the template created we just need to save a copy of it.
 
 1. `File` > `Open...`
 2. `File` > `Save As...`
-3. Enter a name for your file in the `Save As` box.  
+<<<<<<< HEAD
+3. Enter a name for your file in the `Save As` box.
+=======
+3. Enter a name for your file in the `Save As` box.
+>>>>>>> 🎮
 4. Ensure that the name has no spaces, is all lowercase and has `.html` as an extension.
 5. Select location to save.
 6. Click `Save` button

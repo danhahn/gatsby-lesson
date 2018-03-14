@@ -1,7 +1,7 @@
 ---
 title: Lesson 1
 lesson: Homework – Lesson 1
-date: 1/24/2018 15:00
+date: 2018-02-27
 template: article.jade
 
 nav:

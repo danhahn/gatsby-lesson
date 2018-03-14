@@ -1,7 +1,7 @@
 ---
 title: Lesson 1
 lesson: HTML Editors
-date: 1/24/2018 15:00
+date: 2018-02-27
 template: article.jade
 
 nav:
@@ -33,7 +33,11 @@ Developer: GitHub
 
 [![](https://upload.wikimedia.org/wikipedia/commons/thumb/2/2d/Visual_Studio_Code_1.18_icon.svg/129px-Visual_Studio_Code_1.18_icon.svg.png)](https://code.visualstudio.com/)
 
-Visual Studio Code is a source code editor developed by Microsoft for Windows, Linux and macOS. It includes support for debugging, embedded Git control, syntax highlighting, intelligent code completion, snippets, and code refactoring. It is also customizable, so users can change the editor's theme, keyboard shortcuts, and preferences. It is free and open-source, although the official download is under a proprietary license. Visual Studio Code is based on Electron, a framework which is used to deploy Node.js applications for the desktop running on the Blink layout engine. 
+<<<<<<< HEAD
+Visual Studio Code is a source code editor developed by Microsoft for Windows, Linux and macOS. It includes support for debugging, embedded Git control, syntax highlighting, intelligent code completion, snippets, and code refactoring. It is also customizable, so users can change the editor's theme, keyboard shortcuts, and preferences. It is free and open-source, although the official download is under a proprietary license. Visual Studio Code is based on Electron, a framework which is used to deploy Node.js applications for the desktop running on the Blink layout engine.
+=======
+Visual Studio Code is a source code editor developed by Microsoft for Windows, Linux and macOS. It includes support for debugging, embedded Git control, syntax highlighting, intelligent code completion, snippets, and code refactoring. It is also customizable, so users can change the editor's theme, keyboard shortcuts, and preferences. It is free and open-source, although the official download is under a proprietary license. Visual Studio Code is based on Electron, a framework which is used to deploy Node.js applications for the desktop running on the Blink layout engine.
+>>>>>>> 🎮
 
 ---
 
@@ -120,7 +124,11 @@ h2 + p > a {
   display: block;
   border: 2px solid #e6e9ea;
   padding: 1em;
-  
+<<<<<<< HEAD
+
+=======
+
+>>>>>>> 🎮
 }
 
 p img,
